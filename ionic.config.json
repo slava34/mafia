@@ -1,0 +1,7 @@
+{
+  "name": "Mafia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
