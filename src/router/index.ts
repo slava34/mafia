@@ -14,7 +14,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/message/:id',
-    component: () => import('../views/ViewMessagePage.vue')
+    component: () => import('../views/CreateGamePage.vue')
   }
 ]
 

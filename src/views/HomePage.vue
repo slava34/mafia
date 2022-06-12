@@ -28,13 +28,13 @@
 import { IonContent, IonHeader, IonList, IonPage, IonRefresher, IonRefresherContent, IonTitle, IonToolbar } from '@ionic/vue';
 import MessageListItem from '@/components/MessageListItem.vue';
 import { defineComponent } from 'vue';
-import { getMessages } from '@/data/messages';
+import { getRoles } from '@/data/messages';
 
 export default defineComponent({
   name: 'HomePage',
   data() {
     return {
-      messages: getMessages()
+      messages: getRoles()
     }
   },
   methods: {

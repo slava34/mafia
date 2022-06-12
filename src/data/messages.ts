@@ -1,62 +1,33 @@
-export interface Message {
-  fromName: string;
-  subject: string;
-  date: string;
+export interface Role {
+  name: string;
   id: number;
 }
 
-const messages: Message[] = [
+const roles: Role[] = [
   {
-    fromName: 'Matt Chorsey',
-    subject: 'New event: Trip to Vegas',
-    date: '9:32 AM',
+    name: 'Мафия',
     id: 0
   },
   {
-    fromName: 'Lauren Ruthford',
-    subject: 'Long time no chat',
-    date: '6:12 AM',
-    id: 1
+    name: 'Мирный',
+    id: 0
   },
   {
-    fromName: 'Jordan Firth',
-    subject: 'Report Results',
-    date: '4:55 AM',
-    id: 2
-
+    name: 'Путана',
+    id: 0
   },
   {
-    fromName: 'Bill Thomas',
-    subject: 'The situation',
-    date: 'Yesterday',
-    id: 3
+    name: 'Дон',
+    id: 0
   },
   {
-    fromName: 'Joanne Pollan',
-    subject: 'Updated invitation: Swim lessons',
-    date: 'Yesterday',
-    id: 4
+    name: 'Комиссар',
+    id: 0
   },
   {
-    fromName: 'Andrea Cornerston',
-    subject: 'Last minute ask',
-    date: 'Yesterday',
-    id: 5
+    name: 'Доктор',
+    id: 0
   },
-  {
-    fromName: 'Moe Chamont',
-    subject: 'Family Calendar - Version 1',
-    date: 'Last Week',
-    id: 6
-  },
-  {
-    fromName: 'Kelly Richardson',
-    subject: 'Placeholder Headhots',
-    date: 'Last Week',
-    id: 7
-  }
 ];
 
-export const getMessages = () => messages;
-
-export const getMessage = (id: number) => messages.find(m => m.id === id);
+export const getRoles = () => roles;
